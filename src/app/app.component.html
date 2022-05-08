@@ -1,0 +1,11 @@
+<a [routerLink]="[{ outlets: { coms: ['com1'] } }]">Com 1</a>
+<a [routerLink]="'/com2'">Com 2</a>
+<a [routerLink]="'/com3'">Com 3</a>
+
+<router-outlet name="coms"></router-outlet>
+
+<p>Other goes Down</p>
+<router-outlet></router-outlet>
+
+<p>Com greater 3 comes here</p>
+<router-outlet name="com4s"></router-outlet>

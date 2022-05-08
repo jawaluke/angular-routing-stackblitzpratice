@@ -13,7 +13,11 @@ const routes: Routes = [
     outlet: 'coms',
   },
   { path: 'com2', component: Com2Component },
-  { path: 'com3', component: Com3Component },
+  {
+    path: 'com3',
+    component: Com3Component,
+    children: [{ path: 'com5', component: Com5Component, outlet: 'com5s' }],
+  },
   { path: 'com4', component: Com4Component, outlet: 'com4s' },
   { path: 'com5', component: Com5Component, outlet: 'com4s' },
 ];
